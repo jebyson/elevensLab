@@ -7,20 +7,9 @@ package com.company;
 
 public class Card {
 
-    /*
-     * String value that holds the suit of the card
-     */
-    private String suit;
-
-    /*
-     * String value that holds the rank of the card
-     */
-    private String rank;
-
-    /*
-     * int value that holds the point value.
-     */
-    private int pointValue;
+    private String suit; //String value that holds the suit of the card
+    private String rank; //String value that holds the rank of the card
+    private int pointValue; //int value that holds the point value
 
     /*
      * Creates a new <code>Card</code> instance.
@@ -35,31 +24,16 @@ public class Card {
         pointValue = cardPointValue;
     }
 
-    /*
-     * Accesses this <code>Card's</code> suit.
-     * @return this <code>Card's</code> suit.
-     */
-
     public String suit() {
-		return suit;
+		return suit; //Accesses and returns this <code>Card's</code> suit
     }
-
-    /*
-     * Accesses this <code>Card's</code> rank.
-     * @return this <code>Card's</code> rank.
-     */
 
     public String rank() {
-		return rank;
+		return rank; //Accesses and returns this <code>Card's</code> rank
     }
-
-    /*
-     * Accesses this <code>Card's</code> point value.
-     * @return this <code>Card's</code> point value.
-     */
-
+    
     public int pointValue() {
-		return pointValue;
+		return pointValue; //Accesses and returns this <code>Card's</code> point value
     }
 
     /** Compare this card with the argument.
@@ -69,7 +43,14 @@ public class Card {
      */
 
     public boolean matches(Card otherCard) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		if(otherCard.pointValue == pointValue && otherCard.rank.equals(rank) && otherCard.suit.equals(suit))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     /*
@@ -81,6 +62,7 @@ public class Card {
 
     @Override
     public String toString() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		String total = rank + " of " + suit + " (point value = " + pointValue + ")";
+        return total;
     }
 }
