@@ -31,7 +31,7 @@ public class Card {
     public String rank() {
 		return rank; //Accesses and returns this <code>Card's</code> rank
     }
-    
+
     public int pointValue() {
 		return pointValue; //Accesses and returns this <code>Card's</code> point value
     }
