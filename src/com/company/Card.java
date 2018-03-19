@@ -10,17 +10,16 @@ public class Card {
     /*
      * String value that holds the suit of the card
      */
-
     private String suit;
+
     /*
      * String value that holds the rank of the card
      */
-
     private String rank;
+
     /*
      * int value that holds the point value.
      */
-
     private int pointValue;
 
     /*
@@ -31,9 +30,10 @@ public class Card {
      */
 
     public Card(String cardRank, String cardSuit, int cardPointValue) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		rank = cardRank;
+        suit = cardSuit;
+        pointValue = cardPointValue;
     }
-
 
     /*
      * Accesses this <code>Card's</code> suit.
@@ -41,7 +41,7 @@ public class Card {
      */
 
     public String suit() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		return suit;
     }
 
     /*
@@ -50,7 +50,7 @@ public class Card {
      */
 
     public String rank() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		return rank;
     }
 
     /*
@@ -59,7 +59,7 @@ public class Card {
      */
 
     public int pointValue() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		return pointValue;
     }
 
     /** Compare this card with the argument.
@@ -78,7 +78,7 @@ public class Card {
      * This provides a useful way of printing the contents of a <code>Deck</code> in an easily readable format or performing other similar functions.
      * @return a <code>String</code> containing the rank, suit, and point value of the card.
      */
-    
+
     @Override
     public String toString() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
