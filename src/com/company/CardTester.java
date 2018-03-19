@@ -14,7 +14,7 @@ public class CardTester {
     public static void main(String[] args) {
 		Card firstOne = new Card("3", "Diamonds", 3);
         Card secondOne = new Card("6", "Hearts", 6);
-        Card thirdOne = new Card("Jack", "Spade", 11);
+        Card thirdOne = new Card("Jack", "Spades", 11);
 
         System.out.println(firstOne.suit());
         System.out.println(firstOne.rank());
