@@ -7,7 +7,6 @@ public class DeckTester {
      * @param args is not used.
      */
     public static void main(String[] args) {
-
         String [] aRank = {"Ace", "2", "3"};
         String [] aSuit = {"Hearts", "Diamonds", "Clubs"};
         int [] aVal = {2, 1, 6};
