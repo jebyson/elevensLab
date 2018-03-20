@@ -62,7 +62,6 @@ public class Card {
 
     @Override
     public String toString() {
-		String total = rank + " of " + suit + " (point value = " + pointValue + ")";
-        return total;
+        return rank + " of " + suit + " (point value = " + pointValue + ")";
     }
 }
