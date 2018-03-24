@@ -4,31 +4,26 @@ public class DeckTester {
 
     /**
      * The main method in this class checks the Deck operations for consistency.
-     * @param args is not used.
+     *	@param args is not used.
      */
     public static void main(String[] args) {
-        String [] aRank = {"Ace", "2", "3"};
-        String [] aSuit = {"Hearts", "Diamonds", "Clubs"};
-        int [] aVal = {2, 1, 6};
-        String [] bRank = {"4", "7", "6"};
-        String [] bSuit = {"Spades", "Clubs", "Hearts"};
-        int [] bVal = {5, 3, 8};
-        String [] cRank = {};
-        String [] cSuit = {};
-        int [] cVal = {};
+        String[] rank1 = {"Jack", "Queen", "King"};
+        String[] suit1 = {"Hearts", "Spades", "Diamonds"};
+        int[] value1 = {11, 12, 13};
+        Deck deck1 = new Deck(rank1, suit1, value1);
+        System.out.println("Deck1 size should be 3: " + deck1.size());
 
-        Deck one = new Deck(aRank, aSuit, aVal);
-        Deck two = new Deck(bRank, bSuit, bVal);
-        Deck three = new Deck(cRank, cSuit, cVal);
+        String[] rank2 = {"10", "Queen", "King"};
+        String[] suit2 = {"Clubs", "Spades", "Diamonds"};
+        int[] value2 = {10, 12, 13};
+        Deck deck2 = new Deck(rank2, suit2, value2);
+        System.out.println("Deck2 is not empty: " + !deck2.isEmpty());
 
-        System.out.println(one.size());
-        System.out.println(one.isEmpty());
-        //System.out.println(one.deal());
-        System.out.println(two.size());
-        System.out.println(two.isEmpty());
-        //System.out.println(two.deal());
-        System.out.println(three.size());
-        System.out.println(three.isEmpty());
-        //System.out.println(three.deal());
+        String[] rank3 = {"1", "3", "Queen"};
+        String[] suit3 = {"Diamonds", "Spades", "Hearts"};
+        int[] value3 = {1, 3, 12};
+        Deck deck3 = new Deck(rank3, suit3, value3);
+        System.out.println("Deck3 dealt card is: " + deck3.deal());
+
     }
 }
