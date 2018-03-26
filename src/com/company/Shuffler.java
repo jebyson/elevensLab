@@ -56,7 +56,6 @@ public class Shuffler {
         System.out.println();
     }
 
-
     /**
      * Apply a "perfect shuffle" to the argument.
      * The perfect shuffle algorithm splits the deck in half, then interleaves
